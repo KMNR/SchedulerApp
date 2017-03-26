@@ -4,7 +4,6 @@ from dj import *
 
 #Variable Declarations
 lineno = 0
-check = False
 DJlist = []
 TheSchedule = []
 
@@ -33,12 +32,6 @@ for i in range(0,len(DJlist)):
         else:
             tempSchedule = Schedule(DJlist[i].showName, DJlist[i].fullName, DJlist[i][j])
             TheSchedule.append(tempSchedule)
-            check = True
-#            To check to see if the schedule is being built correctly, use the following two lines 
-#            to check the decision process
-#
-#            print (TheSchedule)
-#            print ('\n \n')
             break
 
 # Writting Schedule to output File
