@@ -61,7 +61,7 @@ table{
       					&:nth-child(odd){
 						        background:@light2;
 				      	}
-					      &:nth-child(4n+0){
+					      &:nth-child(n+0){
 						        td{
 							          border-bottom:1px solid @blue;
 						        }
@@ -71,7 +71,7 @@ table{
 					        vertical-align: middle;
 					        border-left: 1px solid @blue;
 					        position: relative;
-					        height: 32px;
+					        height: 60px;
 					        cursor: pointer;
 
         					&:last-child{
